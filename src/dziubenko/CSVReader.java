@@ -16,7 +16,7 @@ import java.util.stream.Stream;
 public class CSVReader {
     private static boolean done;
     private final static int NUM = 10000;
-    final static BlockingQueue<String> queue = new ArrayBlockingQueue<>(NUM);
+    final static BlockingQueue<String> queue = new ArrayBlockingQueue<>(50);
 
     public static void main(String[] args) {
         CSVReader reader = new CSVReader();
